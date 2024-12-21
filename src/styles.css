@@ -1,0 +1,78 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #0f0f0f;
+  background-color: #f6f6f6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  display: flex;
+}
+
+.maze-container {
+  display: flex;
+}
+
+.maze {
+  display: grid;
+  grid-template-columns: repeat(7, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 2px;
+}
+
+.maze div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid lightgray;
+}
+
+.wall {
+  background-color: brown;
+}
+
+.empty {
+  background-color: white;
+}
+
+.ship {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ship div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.output {
+  border: 1px solid black;
+  overflow-y: scroll;
+  white-space: pre-wrap; /* 保留换行符并正确显示换行 */
+  height: 150px;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+}
