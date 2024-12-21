@@ -13,10 +13,11 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "feichuan",
+        "title": "飞船",
         "width": 700,
         "height": 600,
-        "resizable": false
+        "resizable": false,
+        "maximizable": false
       }
     ],
     "security": {
